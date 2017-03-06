@@ -1021,8 +1021,8 @@ Source: www.sumida.com/products/pdf/CEP125.pdf</description>
 <pin name="VCM" x="-20.32" y="7.62" length="middle"/>
 <pin name="VDD2" x="-7.62" y="33.02" length="middle" rot="R270"/>
 <pin name="GND1" x="2.54" y="-27.94" length="middle" rot="R90"/>
-<text x="-5.08" y="12.7" size="1.778" layer="94">&gt;NAME</text>
-<text x="-5.08" y="10.16" size="1.778" layer="94">&gt;VALUE</text>
+<text x="-5.08" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="POT_US-">
 <wire x1="0" y1="-5.08" x2="0" y2="-4.572" width="0.1524" layer="94"/>

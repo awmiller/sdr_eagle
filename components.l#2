@@ -1122,10 +1122,11 @@ Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
 <pin name="OUT+" x="12.7" y="-2.54" length="middle" rot="R180"/>
 <pin name="VCC" x="12.7" y="2.54" length="middle" rot="R180"/>
 <pin name="LO+" x="12.7" y="7.62" length="middle" rot="R180"/>
-<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="12.7" width="0.254" layer="94"/>
 <wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="-20.32" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
