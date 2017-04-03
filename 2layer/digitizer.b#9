@@ -1673,6 +1673,102 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 </package>
 </packages>
 </library>
+<library name="lt_ftdi_and_more">
+<description>&lt;b&gt;Linear Technology Devices&lt;/b&gt;&lt;p&gt;
+http://www.linear-tech.com&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="QFN76">
+<smd name="76" x="-3.5984" y="4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="75" x="-3.1984" y="4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="74" x="-2.7984" y="4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="73" x="-2.3984" y="4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="72" x="-1.9984" y="4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="71" x="-1.5984" y="4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="70" x="-1.1984" y="4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="69" x="-0.7984" y="4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="68" x="-0.3984" y="4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="67" x="0.0016" y="4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="66" x="0.4016" y="4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="65" x="0.8016" y="4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="64" x="1.2016" y="4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="63" x="1.6016" y="4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="62" x="2.0016" y="4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="61" x="2.4016" y="4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="60" x="2.8016" y="4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="59" x="3.2016" y="4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="58" x="3.6016" y="4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="20" x="-3.5984" y="-4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="21" x="-3.1984" y="-4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="22" x="-2.7984" y="-4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="23" x="-2.3984" y="-4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="24" x="-1.9984" y="-4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="25" x="-1.5984" y="-4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="26" x="-1.1984" y="-4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="27" x="-0.7984" y="-4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="28" x="-0.3984" y="-4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="29" x="0.0016" y="-4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="30" x="0.4016" y="-4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="31" x="0.8016" y="-4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="32" x="1.2016" y="-4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="33" x="1.6016" y="-4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="34" x="2.0016" y="-4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="35" x="2.4016" y="-4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="36" x="2.8016" y="-4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="37" x="3.2016" y="-4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="38" x="3.6016" y="-4.5" dx="0.2032" dy="0.84" layer="1"/>
+<smd name="1" x="-4.5" y="3.5984" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="2" x="-4.5" y="3.1984" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="3" x="-4.5" y="2.7984" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="4" x="-4.5" y="2.3984" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="5" x="-4.5" y="1.9984" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="6" x="-4.5" y="1.5984" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="7" x="-4.5" y="1.1984" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="8" x="-4.5" y="0.7984" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="9" x="-4.5" y="0.3984" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="10" x="-4.5" y="-0.0016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="11" x="-4.5" y="-0.4016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="12" x="-4.5" y="-0.8016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="13" x="-4.5" y="-1.2016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="14" x="-4.5" y="-1.6016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="15" x="-4.5" y="-2.0016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="16" x="-4.5" y="-2.4016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="17" x="-4.5" y="-2.8016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="18" x="-4.5" y="-3.2016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="19" x="-4.5" y="-3.6016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="57" x="4.5" y="3.5984" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="56" x="4.5" y="3.1984" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="55" x="4.5" y="2.7984" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="54" x="4.5" y="2.3984" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="53" x="4.5" y="1.9984" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="52" x="4.5" y="1.5984" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="51" x="4.5" y="1.1984" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="50" x="4.5" y="0.7984" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="49" x="4.5" y="0.3984" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="48" x="4.5" y="-0.0016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="47" x="4.5" y="-0.4016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="46" x="4.5" y="-0.8016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="45" x="4.5" y="-1.2016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="44" x="4.5" y="-1.6016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="43" x="4.5" y="-2.0016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="42" x="4.5" y="-2.4016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="41" x="4.5" y="-2.8016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="40" x="4.5" y="-3.2016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<smd name="39" x="4.5" y="-3.6016" dx="0.2032" dy="0.84" layer="1" rot="R90"/>
+<wire x1="-4.08" y1="4.5" x2="4.08" y2="4.5" width="0.127" layer="51"/>
+<wire x1="-4.08" y1="-4.5" x2="4.08" y2="-4.5" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="4.08" x2="-4.5" y2="-4.08" width="0.127" layer="51"/>
+<wire x1="4.5" y1="4.08" x2="4.5" y2="-4.08" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="4.08" x2="-4.08" y2="4.5" width="0.127" layer="21"/>
+<wire x1="4.08" y1="4.5" x2="4.5" y2="4.08" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-4.08" x2="-4.08" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="4.08" y1="-4.5" x2="4.5" y2="-4.08" width="0.127" layer="21"/>
+<circle x="-3.2" y="3.2" radius="0.5099" width="0" layer="21"/>
+<text x="-3.5" y="-3.1" size="1.27" layer="25">&gt;NAME</text>
+<smd name="77" x="0" y="0" dx="5.45" dy="5.45" layer="1" rot="R90"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1926,40 +2022,65 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="52.578" y="88.392" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="JP2" library="pinhead" package="2X20" value="" x="-6.35" y="-106.426"/>
+<element name="R8" library="resistor" package="R0402" value="" x="-36.83" y="-117.856"/>
+<element name="R9" library="resistor" package="R0402" value="" x="-36.83" y="-121.92"/>
+<element name="IC1" library="lt_ftdi_and_more" package="QFN76" value="FT601QQFN76" x="-43.942" y="-114.3"/>
 </elements>
 <signals>
 <signal name="SAMP0">
 <contactref element="U$1" pad="16"/>
+<contactref element="JP1" pad="2"/>
+<wire x1="66.52" y1="38.29" x2="-30.48" y2="-87.376" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SAMP1">
 <contactref element="U$1" pad="17"/>
+<contactref element="JP1" pad="4"/>
+<wire x1="67.12" y1="38.89" x2="-27.94" y2="-87.376" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SAMP2">
 <contactref element="U$1" pad="18"/>
+<contactref element="JP1" pad="6"/>
+<wire x1="67.12" y1="39.39" x2="-25.4" y2="-87.376" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SAMP3">
 <contactref element="U$1" pad="19"/>
+<contactref element="JP1" pad="8"/>
+<wire x1="67.12" y1="39.89" x2="-22.86" y2="-87.376" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SAMP4">
 <contactref element="U$1" pad="22"/>
+<contactref element="JP1" pad="10"/>
+<wire x1="-20.32" y1="-87.376" x2="67.12" y2="41.39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SAMP5">
 <contactref element="U$1" pad="23"/>
+<contactref element="JP1" pad="12"/>
+<wire x1="-17.78" y1="-87.376" x2="67.12" y2="41.89" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SAMP6">
 <contactref element="U$1" pad="24"/>
+<contactref element="JP1" pad="14"/>
+<wire x1="-15.24" y1="-87.376" x2="67.12" y2="42.39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SAMP7">
 <contactref element="U$1" pad="25"/>
+<contactref element="JP1" pad="16"/>
+<wire x1="-12.7" y1="-87.376" x2="66.52" y2="42.99" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SAMP8">
 <contactref element="U$1" pad="26"/>
+<contactref element="JP1" pad="18"/>
+<wire x1="-10.16" y1="-87.376" x2="66.02" y2="42.99" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SAMP9">
 <contactref element="U$1" pad="27"/>
+<contactref element="JP1" pad="20"/>
+<wire x1="-7.62" y1="-87.376" x2="65.52" y2="42.99" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OVFL">
 <contactref element="U$1" pad="28"/>
+<contactref element="JP1" pad="22"/>
+<wire x1="-5.08" y1="-87.376" x2="65.02" y2="42.99" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AIN-">
 <contactref element="Z1" pad="2"/>
@@ -2090,6 +2211,10 @@ design rules under a new name.</description>
 </signal>
 <signal name="SAMPCLK">
 <contactref element="U$1" pad="9"/>
+<contactref element="R8" pad="1"/>
+<contactref element="R9" pad="1"/>
+<wire x1="-37.48" y1="-117.856" x2="-37.48" y2="-121.92" width="0" layer="19" extent="1-1"/>
+<wire x1="63.02" y1="38.29" x2="-37.48" y2="-117.856" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_SLP">
 <contactref element="U$1" pad="10"/>
@@ -2203,6 +2328,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="LO+">
 <contactref element="C13" pad="1"/>
+<contactref element="R9" pad="2"/>
+<wire x1="-37.48" y1="-45.466" x2="-36.18" y2="-121.92" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$23">
 <contactref element="R6" pad="2"/>
@@ -2231,41 +2358,10 @@ design rules under a new name.</description>
 <signal name="RFIN2">
 <contactref element="R7" pad="1"/>
 </signal>
-<signal name="N$11">
-<contactref element="JP1" pad="2"/>
-</signal>
-<signal name="N$12">
-<contactref element="JP1" pad="4"/>
-</signal>
-<signal name="N$13">
-<contactref element="JP1" pad="6"/>
-</signal>
-<signal name="N$14">
-<contactref element="JP1" pad="8"/>
-</signal>
-<signal name="N$15">
-<contactref element="JP1" pad="10"/>
-</signal>
-<signal name="N$16">
-<contactref element="JP1" pad="12"/>
-</signal>
-<signal name="N$17">
-<contactref element="JP1" pad="14"/>
-</signal>
-<signal name="N$19">
-<contactref element="JP1" pad="16"/>
-</signal>
-<signal name="N$27">
-<contactref element="JP1" pad="18"/>
-</signal>
-<signal name="N$28">
-<contactref element="JP1" pad="20"/>
-</signal>
-<signal name="N$29">
-<contactref element="JP1" pad="22"/>
-</signal>
-<signal name="N$30">
+<signal name="DIGCLK">
 <contactref element="JP1" pad="24"/>
+<contactref element="R8" pad="2"/>
+<wire x1="-2.54" y1="-87.376" x2="-36.18" y2="-117.856" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$31">
 <contactref element="JP1" pad="26"/>
