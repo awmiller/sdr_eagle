@@ -3291,9 +3291,9 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="36.83" y="0.254" size="0.6096" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="50B4464" x="36.83" y="0.254" size="0.6096" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R16" library="resistor" package="R0402" value="" x="58.166" y="45.72" smashed="yes" rot="MR180">
-<attribute name="NAME" x="59.563" y="46.355" size="1.27" layer="26" rot="MR0"/>
-<attribute name="VALUE" x="57.531" y="47.625" size="1.27" layer="28" rot="MR180"/>
+<element name="R16" library="resistor" package="R0402" value="" x="58.42" y="47.244" smashed="yes" rot="MR180">
+<attribute name="NAME" x="59.817" y="47.879" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="57.785" y="49.149" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="RESET" library="SparkFun-Switches" package="TACTILE_SWITCH_SMD_6.0X3.5MM" value="MOMENTARY-SWITCH-SPST-SMD-6.0X3.5MM" x="50.292" y="39.116" smashed="yes" rot="R90">
 <attribute name="NAME" x="47.625" y="38.862" size="1.27" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
@@ -3304,9 +3304,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="51.181" y="48.133" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="48.387" y="47.117" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R17" library="resistor" package="R0402" value="" x="58.166" y="47.498" smashed="yes" rot="MR180">
-<attribute name="NAME" x="59.563" y="48.387" size="1.27" layer="26" rot="MR0"/>
-<attribute name="VALUE" x="57.531" y="49.403" size="1.27" layer="28" rot="MR180"/>
+<element name="R17" library="resistor" package="R0402" value="" x="58.42" y="49.784" smashed="yes" rot="MR180">
+<attribute name="NAME" x="59.817" y="50.673" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="57.785" y="51.689" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="JP3" library="pinhead" package="2X20" value="" x="63.373" y="25.654" rot="R90"/>
 <element name="JP4" library="pinhead" package="2X20" value="" x="72.39" y="25.654" rot="R90"/>
@@ -3560,18 +3560,18 @@ design rules under a new name.</description>
 </signal>
 <signal name="SAMPCLK">
 <contactref element="U$1" pad="9"/>
-<contactref element="JP3" pad="2"/>
-<wire x1="62.103" y1="1.524" x2="54.384" y2="9.08" width="0" layer="19" extent="1-1"/>
+<contactref element="JP3" pad="4"/>
+<wire x1="54.384" y1="9.08" x2="62.103" y2="4.064" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_SLP">
 <contactref element="U$1" pad="10"/>
-<contactref element="JP3" pad="1"/>
-<wire x1="54.884" y1="9.08" x2="64.643" y2="1.524" width="0" layer="19" extent="1-1"/>
+<contactref element="JP4" pad="3"/>
+<wire x1="54.884" y1="9.08" x2="73.66" y2="4.064" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_OEN">
 <contactref element="U$1" pad="11"/>
-<contactref element="JP3" pad="4"/>
-<wire x1="55.384" y1="9.08" x2="62.103" y2="4.064" width="0" layer="19" extent="1-1"/>
+<contactref element="JP4" pad="4"/>
+<wire x1="55.384" y1="9.08" x2="71.12" y2="4.064" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="C8" pad="1"/>
@@ -3944,7 +3944,7 @@ design rules under a new name.</description>
 <contactref element="RESET" pad="2"/>
 <contactref element="R12" pad="2"/>
 <contactref element="R17" pad="1"/>
-<wire x1="50.292" y1="45.832" x2="57.516" y2="47.498" width="0" layer="19" extent="1-16"/>
+<wire x1="50.292" y1="45.832" x2="57.77" y2="49.784" width="0" layer="19" extent="1-16"/>
 <wire x1="50.292" y1="42.266" x2="50.292" y2="45.832" width="0" layer="19" extent="1-1"/>
 <wire x1="38.751296875" y1="30.863340625" x2="50.292" y2="42.266" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -3953,7 +3953,7 @@ design rules under a new name.</description>
 <contactref element="USB_WAKE" pad="2"/>
 <contactref element="R13" pad="2"/>
 <contactref element="R16" pad="1"/>
-<wire x1="57.516" y1="45.72" x2="55.88" y2="45.832" width="0" layer="19" extent="1-16"/>
+<wire x1="57.77" y1="47.244" x2="55.88" y2="45.832" width="0" layer="19" extent="1-16"/>
 <wire x1="55.88" y1="42.266" x2="55.88" y2="45.832" width="0" layer="19" extent="1-1"/>
 <wire x1="39.0341375" y1="31.146184375" x2="55.88" y2="42.266" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -4036,13 +4036,13 @@ design rules under a new name.</description>
 </signal>
 <signal name="SFT_RSTN">
 <contactref element="R17" pad="2"/>
-<contactref element="JP4" pad="38"/>
-<wire x1="58.816" y1="47.498" x2="71.12" y2="47.244" width="0" layer="19" extent="16-16"/>
+<contactref element="JP3" pad="40"/>
+<wire x1="59.07" y1="49.784" x2="62.103" y2="49.784" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SFT_WKPN">
 <contactref element="R16" pad="2"/>
-<contactref element="JP4" pad="36"/>
-<wire x1="58.816" y1="45.72" x2="71.12" y2="44.704" width="0" layer="19" extent="16-16"/>
+<contactref element="JP3" pad="38"/>
+<wire x1="59.07" y1="47.244" x2="62.103" y2="47.244" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$1">
 <contactref element="X1" pad="G@2"/>

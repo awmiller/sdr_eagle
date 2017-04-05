@@ -11977,6 +11977,12 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="SUPPLY36" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY37" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY38" library="supply2" deviceset="GND" device=""/>
+<part name="U$8" library="linear-technology" deviceset="LT1763CS8" device="" technology="-3"/>
+<part name="C23" library="resistor" deviceset="C-US" device="C0402" value="1u"/>
+<part name="C24" library="resistor" deviceset="C-US" device="C0402" value="0.01u"/>
+<part name="C25" library="resistor" deviceset="C-US" device="C0402" value="10u"/>
+<part name="SUPPLY39" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY40" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11986,11 +11992,11 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <wire x1="88.9" y1="-55.88" x2="88.9" y2="-33.02" width="0.1524" layer="97" style="longdash"/>
 <wire x1="88.9" y1="-33.02" x2="35.56" y2="-33.02" width="0.1524" layer="97" style="longdash"/>
 <text x="37.338" y="-32.004" size="1.778" layer="97">Mixer impedance match and image filter</text>
-<wire x1="-48.26" y1="-55.88" x2="-48.26" y2="-93.98" width="0.1524" layer="97" style="longdash"/>
+<wire x1="-48.26" y1="-17.78" x2="-48.26" y2="-93.98" width="0.1524" layer="97" style="longdash"/>
 <wire x1="-48.26" y1="-93.98" x2="17.78" y2="-93.98" width="0.1524" layer="97" style="longdash"/>
-<wire x1="17.78" y1="-93.98" x2="17.78" y2="-55.88" width="0.1524" layer="97" style="longdash"/>
-<wire x1="17.78" y1="-55.88" x2="-48.26" y2="-55.88" width="0.1524" layer="97" style="longdash"/>
-<text x="-46.482" y="-54.864" size="1.778" layer="97">Analog and Digital power isolation</text>
+<wire x1="17.78" y1="-93.98" x2="17.78" y2="-17.78" width="0.1524" layer="97" style="longdash"/>
+<wire x1="17.78" y1="-17.78" x2="-48.26" y2="-17.78" width="0.1524" layer="97" style="longdash"/>
+<text x="-46.482" y="-16.764" size="1.778" layer="97">Analog and Digital power isolation</text>
 <text x="58.42" y="99.06" size="5.08" layer="97">Mixer</text>
 <text x="50.8" y="53.34" size="5.08" layer="97">ADC</text>
 <text x="14.986" y="110.49" size="1.778" layer="97">EXTERNAL LO OPTION</text>
@@ -12074,6 +12080,12 @@ FOR RESET AND WAKEUP SIG</text>
 <instance part="SUPPLY36" gate="GND" x="-25.4" y="99.06" rot="R90"/>
 <instance part="SUPPLY37" gate="GND" x="-27.94" y="86.36" rot="R90"/>
 <instance part="SUPPLY38" gate="GND" x="-25.4" y="73.66" rot="R90"/>
+<instance part="U$8" gate="G$1" x="-22.86" y="-30.48"/>
+<instance part="C23" gate="G$1" x="-38.1" y="-39.37"/>
+<instance part="C24" gate="G$1" x="-2.54" y="-29.21"/>
+<instance part="C25" gate="G$1" x="7.62" y="-29.21"/>
+<instance part="SUPPLY39" gate="GND" x="-20.32" y="-53.34"/>
+<instance part="SUPPLY40" gate="GND" x="7.62" y="-38.1"/>
 </instances>
 <busses>
 <bus name="UDAT[0..31],BE[0..3],TXEN,RXFN,SIWUN,WRN,RDN,OEN,RSTN,WKPN,GPIO[0..1],FCLK">
@@ -12516,6 +12528,29 @@ FOR RESET AND WAKEUP SIG</text>
 <wire x1="-53.34" y1="99.06" x2="-68.58" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="SUPPLY34" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<pinref part="SUPPLY40" gate="GND" pin="GND"/>
+<pinref part="C25" gate="G$1" pin="2"/>
+<wire x1="7.62" y1="-35.56" x2="7.62" y2="-34.29" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C23" gate="G$1" pin="2"/>
+<wire x1="-38.1" y1="-44.45" x2="-38.1" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-48.26" x2="-25.4" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="GND@1"/>
+<wire x1="-25.4" y1="-48.26" x2="-25.4" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="GND@2"/>
+<wire x1="-25.4" y1="-48.26" x2="-22.86" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="-48.26" x2="-22.86" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="-25.4" y="-48.26"/>
+<pinref part="U$8" gate="G$1" pin="GND@3"/>
+<wire x1="-22.86" y1="-48.26" x2="-20.32" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-48.26" x2="-20.32" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="-22.86" y="-48.26"/>
+<pinref part="SUPPLY39" gate="GND" pin="GND"/>
+<wire x1="-20.32" y1="-48.26" x2="-20.32" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="-20.32" y="-48.26"/>
+</segment>
 </net>
 <net name="AVDD" class="0">
 <segment>
@@ -12545,18 +12580,6 @@ FOR RESET AND WAKEUP SIG</text>
 <junction x="101.6" y="55.88"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="IN"/>
-<wire x1="-35.56" y1="-63.5" x2="-38.1" y2="-63.5" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="-45.72" y1="-63.5" x2="-38.1" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="-63.5" x2="-38.1" y2="-68.58" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="!SHDN"/>
-<wire x1="-38.1" y1="-68.58" x2="-38.1" y2="-72.39" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="-68.58" x2="-38.1" y2="-68.58" width="0.1524" layer="91"/>
-<junction x="-38.1" y="-68.58"/>
-<label x="-45.72" y="-63.5" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="-76.2" y1="-73.66" x2="-81.28" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-81.28" y1="-73.66" x2="-81.28" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="1"/>
@@ -12565,6 +12588,23 @@ FOR RESET AND WAKEUP SIG</text>
 <wire x1="-99.06" y1="-73.66" x2="-104.14" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="-73.66" x2="-104.14" y2="-71.12" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="U$8" gate="G$1" pin="SENSE"/>
+<wire x1="-10.16" y1="-30.48" x2="-7.62" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-30.48" x2="-7.62" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="OUT"/>
+<wire x1="-7.62" y1="-27.94" x2="-10.16" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-27.94" x2="-7.62" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="-7.62" y="-27.94"/>
+<pinref part="C25" gate="G$1" pin="1"/>
+<wire x1="-7.62" y1="-25.4" x2="-2.54" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-25.4" x2="7.62" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-25.4" x2="7.62" y2="-26.67" width="0.1524" layer="91"/>
+<pinref part="C24" gate="G$1" pin="1"/>
+<wire x1="-2.54" y1="-26.67" x2="-2.54" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="-2.54" y="-25.4"/>
+<label x="0" y="-25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AIN+" class="0">
@@ -13232,6 +13272,40 @@ FOR RESET AND WAKEUP SIG</text>
 <pinref part="JP3" gate="A" pin="18"/>
 <wire x1="-76.2" y1="78.74" x2="-73.66" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="81.28" x2="-53.34" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="BYP"/>
+<pinref part="C24" gate="G$1" pin="2"/>
+<wire x1="-10.16" y1="-35.56" x2="-2.54" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-35.56" x2="-2.54" y2="-34.29" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VBUS" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="IN"/>
+<wire x1="-35.56" y1="-27.94" x2="-38.1" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="C23" gate="G$1" pin="1"/>
+<wire x1="-45.72" y1="-27.94" x2="-38.1" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-27.94" x2="-38.1" y2="-33.02" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="!SHDN"/>
+<wire x1="-38.1" y1="-33.02" x2="-38.1" y2="-36.83" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-33.02" x2="-38.1" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="-38.1" y="-33.02"/>
+<label x="-45.72" y="-27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="IN"/>
+<wire x1="-35.56" y1="-63.5" x2="-38.1" y2="-63.5" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="-45.72" y1="-63.5" x2="-38.1" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-63.5" x2="-38.1" y2="-68.58" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="!SHDN"/>
+<wire x1="-38.1" y1="-68.58" x2="-38.1" y2="-72.39" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-68.58" x2="-38.1" y2="-68.58" width="0.1524" layer="91"/>
+<junction x="-38.1" y="-68.58"/>
+<label x="-45.72" y="-63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
