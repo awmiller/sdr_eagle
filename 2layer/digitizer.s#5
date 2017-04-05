@@ -11952,17 +11952,24 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="C21" library="resistor" deviceset="C-US" device="C0402" value="0.1u"/>
 <part name="C22" library="resistor" deviceset="C-US" device="C0402" value="4.7u"/>
 <part name="SUPPLY25" library="supply2" deviceset="GND" device=""/>
-<part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-6.0X3.5MM"/>
+<part name="USB_WAKE" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-6.0X3.5MM"/>
 <part name="R13" library="resistor" deviceset="R-US_" device="R0402"/>
 <part name="SUPPLY26" library="supply2" deviceset="GND" device=""/>
 <part name="X2" library="con-coax" deviceset="SMA-" device="142-0711-881/886"/>
 <part name="R16" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="S2" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-6.0X3.5MM"/>
+<part name="RESET" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-6.0X3.5MM"/>
 <part name="R12" library="resistor" deviceset="R-US_" device="R0402"/>
 <part name="SUPPLY27" library="supply2" deviceset="GND" device=""/>
 <part name="R17" library="resistor" deviceset="R-US_" device="R0402"/>
 <part name="JP3" library="pinhead" deviceset="PINHD-2X20" device=""/>
 <part name="JP4" library="pinhead" deviceset="PINHD-2X20" device=""/>
+<part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY28" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY29" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY30" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY31" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12031,32 +12038,42 @@ FOR RESET AND WAKEUP SIG</text>
 <instance part="JP2" gate="A" x="-99.06" y="20.32"/>
 <instance part="FRAME1" gate="G$1" x="-129.54" y="-96.52"/>
 <instance part="FRAME1" gate="G$2" x="43.18" y="-96.52"/>
-<instance part="S1" gate="G$1" x="-86.36" y="-66.04" smashed="yes" rot="R90">
+<instance part="USB_WAKE" gate="G$1" x="-86.36" y="-66.04" smashed="yes" rot="R90">
 <attribute name="NAME" x="-87.884" y="-66.04" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 </instance>
 <instance part="R13" gate="G$1" x="-81.28" y="-66.04" rot="R90"/>
 <instance part="SUPPLY26" gate="GND" x="-91.44" y="-73.66" rot="R270"/>
 <instance part="X2" gate="G1" x="25.4" y="104.14" rot="R270"/>
 <instance part="R16" gate="G$1" x="-81.28" y="-50.8" rot="R90"/>
-<instance part="S2" gate="G$1" x="-109.22" y="-66.04" smashed="yes" rot="R90">
+<instance part="RESET" gate="G$1" x="-109.22" y="-66.04" smashed="yes" rot="R90">
 <attribute name="NAME" x="-110.744" y="-66.04" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 </instance>
 <instance part="R12" gate="G$1" x="-104.14" y="-66.04" rot="R90"/>
 <instance part="SUPPLY27" gate="GND" x="-114.3" y="-73.66" rot="R270"/>
 <instance part="R17" gate="G$1" x="-104.14" y="-50.8" rot="R90"/>
-<instance part="JP3" gate="A" x="-55.88" y="86.36"/>
-<instance part="JP4" gate="A" x="-55.88" y="20.32"/>
+<instance part="JP3" gate="A" x="-48.26" y="83.82" rot="R180"/>
+<instance part="JP4" gate="A" x="-48.26" y="17.78" rot="R180"/>
+<instance part="SUPPLY8" gate="GND" x="-60.96" y="33.02" rot="R270"/>
+<instance part="SUPPLY9" gate="GND" x="-60.96" y="20.32" rot="R270"/>
+<instance part="SUPPLY10" gate="GND" x="-60.96" y="7.62" rot="R270"/>
+<instance part="SUPPLY28" gate="GND" x="-38.1" y="7.62" rot="R90"/>
+<instance part="SUPPLY29" gate="GND" x="-38.1" y="20.32" rot="R90"/>
+<instance part="SUPPLY30" gate="GND" x="-38.1" y="33.02" rot="R90"/>
+<instance part="SUPPLY31" gate="GND" x="-38.1" y="43.18" rot="R90"/>
 </instances>
 <busses>
 <bus name="UDAT[0..31],BE[0..3],TXEN,RXFN,SIWUN,WRN,RDN,OEN,RSTN,WKPN,GPIO[0..1],FCLK">
 <segment>
 <label x="-121.92" y="68.58" size="1.778" layer="95" rot="R270"/>
 <wire x1="-119.38" y1="-20.32" x2="-76.2" y2="-20.32" width="0.762" layer="92"/>
-<wire x1="-76.2" y1="-20.32" x2="-76.2" y2="17.78" width="0.762" layer="92"/>
+<wire x1="-76.2" y1="-20.32" x2="-76.2" y2="45.72" width="0.762" layer="92"/>
 <wire x1="-119.38" y1="-20.32" x2="-119.38" y2="53.34" width="0.762" layer="92"/>
-<wire x1="-119.38" y1="78.74" x2="-119.38" y2="53.34" width="0.762" layer="92"/>
-<wire x1="-119.38" y1="53.34" x2="-78.74" y2="53.34" width="0.762" layer="92"/>
-<wire x1="-78.74" y1="53.34" x2="-78.74" y2="78.74" width="0.762" layer="92"/>
+<wire x1="-119.38" y1="83.82" x2="-119.38" y2="53.34" width="0.762" layer="92"/>
+<wire x1="-119.38" y1="53.34" x2="-76.2" y2="53.34" width="0.762" layer="92"/>
+<wire x1="-76.2" y1="53.34" x2="-76.2" y2="111.76" width="0.762" layer="92"/>
+<wire x1="-76.2" y1="53.34" x2="-20.32" y2="53.34" width="0.762" layer="92"/>
+<wire x1="-20.32" y1="53.34" x2="-20.32" y2="111.76" width="0.762" layer="92"/>
+<wire x1="-20.32" y1="53.34" x2="-20.32" y2="17.78" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
@@ -12303,13 +12320,13 @@ FOR RESET AND WAKEUP SIG</text>
 </segment>
 <segment>
 <pinref part="SUPPLY26" gate="GND" pin="GND"/>
-<pinref part="S1" gate="G$1" pin="1"/>
+<pinref part="USB_WAKE" gate="G$1" pin="1"/>
 <wire x1="-88.9" y1="-73.66" x2="-86.36" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-86.36" y1="-73.66" x2="-86.36" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY27" gate="GND" pin="GND"/>
-<pinref part="S2" gate="G$1" pin="1"/>
+<pinref part="RESET" gate="G$1" pin="1"/>
 <wire x1="-111.76" y1="-73.66" x2="-109.22" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-109.22" y1="-73.66" x2="-109.22" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
@@ -12358,6 +12375,16 @@ FOR RESET AND WAKEUP SIG</text>
 <pinref part="JP1" gate="A" pin="12"/>
 <wire x1="-83.82" y1="96.52" x2="-93.98" y2="96.52" width="0.1524" layer="91"/>
 <label x="-88.9" y="96.52" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="11"/>
+<wire x1="-111.76" y1="30.48" x2="-101.6" y2="30.48" width="0.1524" layer="91"/>
+<label x="-111.76" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="12"/>
+<wire x1="-83.82" y1="30.48" x2="-93.98" y2="30.48" width="0.1524" layer="91"/>
+<label x="-88.9" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AVDD" class="0">
@@ -12657,7 +12684,7 @@ FOR RESET AND WAKEUP SIG</text>
 </net>
 <net name="RSTN" class="0">
 <segment>
-<pinref part="S2" gate="G$1" pin="2"/>
+<pinref part="RESET" gate="G$1" pin="2"/>
 <wire x1="-109.22" y1="-60.96" x2="-109.22" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="-109.22" y1="-58.42" x2="-104.14" y2="-58.42" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
@@ -12707,7 +12734,7 @@ FOR RESET AND WAKEUP SIG</text>
 <segment>
 <pinref part="R13" gate="G$1" pin="2"/>
 <pinref part="R16" gate="G$1" pin="1"/>
-<pinref part="S1" gate="G$1" pin="2"/>
+<pinref part="USB_WAKE" gate="G$1" pin="2"/>
 <wire x1="-86.36" y1="-60.96" x2="-86.36" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="-86.36" y1="-58.42" x2="-81.28" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="-81.28" y1="-58.42" x2="-81.28" y2="-55.88" width="0.1524" layer="91"/>
@@ -12715,6 +12742,404 @@ FOR RESET AND WAKEUP SIG</text>
 <wire x1="-81.28" y1="-58.42" x2="-81.28" y2="-60.96" width="0.1524" layer="91"/>
 <wire x1="-76.2" y1="-20.32" x2="-76.2" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="-76.2" y1="-53.34" x2="-81.28" y2="-58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="UDAT0" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="39"/>
+<wire x1="-119.38" y1="-7.62" x2="-116.84" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="-5.08" x2="-101.6" y2="-5.08" width="0.1524" layer="91"/>
+<label x="-114.3" y="-5.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT1" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="40"/>
+<wire x1="-76.2" y1="-7.62" x2="-78.74" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="-5.08" x2="-93.98" y2="-5.08" width="0.1524" layer="91"/>
+<label x="-88.9" y="-5.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT2" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="37"/>
+<wire x1="-119.38" y1="-5.08" x2="-116.84" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="-2.54" x2="-101.6" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-114.3" y="-2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT3" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="38"/>
+<wire x1="-76.2" y1="-5.08" x2="-78.74" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="-2.54" x2="-93.98" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-88.9" y="-2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT4" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="35"/>
+<wire x1="-119.38" y1="-2.54" x2="-116.84" y2="0" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="0" x2="-101.6" y2="0" width="0.1524" layer="91"/>
+<label x="-114.3" y="0" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT5" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="36"/>
+<wire x1="-76.2" y1="-2.54" x2="-78.74" y2="0" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="0" x2="-93.98" y2="0" width="0.1524" layer="91"/>
+<label x="-88.9" y="0" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT7" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="34"/>
+<wire x1="-76.2" y1="0" x2="-78.74" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="2.54" x2="-93.98" y2="2.54" width="0.1524" layer="91"/>
+<label x="-88.9" y="2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT6" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="33"/>
+<wire x1="-119.38" y1="0" x2="-116.84" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="2.54" x2="-101.6" y2="2.54" width="0.1524" layer="91"/>
+<label x="-114.3" y="2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT9" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="29"/>
+<wire x1="-119.38" y1="5.08" x2="-116.84" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="7.62" x2="-101.6" y2="7.62" width="0.1524" layer="91"/>
+<label x="-114.3" y="7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT8" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="30"/>
+<wire x1="-76.2" y1="5.08" x2="-78.74" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="7.62" x2="-93.98" y2="7.62" width="0.1524" layer="91"/>
+<label x="-88.9" y="7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT11" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="27"/>
+<wire x1="-119.38" y1="7.62" x2="-116.84" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="10.16" x2="-101.6" y2="10.16" width="0.1524" layer="91"/>
+<label x="-114.3" y="10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT10" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="28"/>
+<wire x1="-76.2" y1="7.62" x2="-78.74" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="10.16" x2="-93.98" y2="10.16" width="0.1524" layer="91"/>
+<label x="-88.9" y="10.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT12" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="29"/>
+<wire x1="-119.38" y1="71.12" x2="-116.84" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="73.66" x2="-101.6" y2="73.66" width="0.1524" layer="91"/>
+<label x="-114.3" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT13" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="27"/>
+<wire x1="-119.38" y1="73.66" x2="-116.84" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="76.2" x2="-101.6" y2="76.2" width="0.1524" layer="91"/>
+<label x="-114.3" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT14" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="30"/>
+<wire x1="-76.2" y1="71.12" x2="-78.74" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="73.66" x2="-93.98" y2="73.66" width="0.1524" layer="91"/>
+<label x="-88.9" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT15" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="28"/>
+<wire x1="-76.2" y1="73.66" x2="-78.74" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="76.2" x2="-93.98" y2="76.2" width="0.1524" layer="91"/>
+<label x="-88.9" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT16" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="26"/>
+<wire x1="-76.2" y1="10.16" x2="-78.74" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="12.7" x2="-93.98" y2="12.7" width="0.1524" layer="91"/>
+<label x="-88.9" y="12.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FCLK" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="25"/>
+<wire x1="-119.38" y1="76.2" x2="-116.84" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="78.74" x2="-101.6" y2="78.74" width="0.1524" layer="91"/>
+<label x="-114.3" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT17" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="25"/>
+<wire x1="-119.38" y1="10.16" x2="-116.84" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="12.7" x2="-101.6" y2="12.7" width="0.1524" layer="91"/>
+<label x="-114.3" y="12.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT18" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="24"/>
+<wire x1="-76.2" y1="12.7" x2="-78.74" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="15.24" x2="-93.98" y2="15.24" width="0.1524" layer="91"/>
+<label x="-88.9" y="15.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT19" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="23"/>
+<wire x1="-119.38" y1="12.7" x2="-116.84" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="15.24" x2="-101.6" y2="15.24" width="0.1524" layer="91"/>
+<label x="-114.3" y="15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="24"/>
+<wire x1="-76.2" y1="78.74" x2="-78.74" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="81.28" x2="-93.98" y2="81.28" width="0.1524" layer="91"/>
+<label x="-88.9" y="81.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT24" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="20"/>
+<wire x1="-76.2" y1="17.78" x2="-78.74" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="20.32" x2="-93.98" y2="20.32" width="0.1524" layer="91"/>
+<label x="-88.9" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT26" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="18"/>
+<wire x1="-76.2" y1="20.32" x2="-78.74" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="22.86" x2="-93.98" y2="22.86" width="0.1524" layer="91"/>
+<label x="-88.9" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT28" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="16"/>
+<wire x1="-76.2" y1="22.86" x2="-78.74" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="25.4" x2="-93.98" y2="25.4" width="0.1524" layer="91"/>
+<label x="-88.9" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT30" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="14"/>
+<wire x1="-76.2" y1="25.4" x2="-78.74" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="27.94" x2="-93.98" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="UDAT27" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="17"/>
+<wire x1="-119.38" y1="20.32" x2="-116.84" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="22.86" x2="-101.6" y2="22.86" width="0.1524" layer="91"/>
+<label x="-114.3" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT29" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="15"/>
+<wire x1="-119.38" y1="22.86" x2="-116.84" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="25.4" x2="-101.6" y2="25.4" width="0.1524" layer="91"/>
+<label x="-114.3" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT31" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="13"/>
+<wire x1="-119.38" y1="25.4" x2="-116.84" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="27.94" x2="-101.6" y2="27.94" width="0.1524" layer="91"/>
+<label x="-114.3" y="27.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT22" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="19"/>
+<wire x1="-119.38" y1="83.82" x2="-116.84" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="86.36" x2="-101.6" y2="86.36" width="0.1524" layer="91"/>
+<label x="-114.3" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT20" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="23"/>
+<wire x1="-119.38" y1="78.74" x2="-116.84" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="81.28" x2="-101.6" y2="81.28" width="0.1524" layer="91"/>
+<label x="-114.3" y="81.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT23" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="20"/>
+<wire x1="-76.2" y1="83.82" x2="-78.74" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="86.36" x2="-93.98" y2="86.36" width="0.1524" layer="91"/>
+<label x="-88.9" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT25" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="19"/>
+<wire x1="-119.38" y1="17.78" x2="-116.84" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="20.32" x2="-101.6" y2="20.32" width="0.1524" layer="91"/>
+<label x="-114.3" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND1" class="0">
+<segment>
+<pinref part="JP4" gate="A" pin="32"/>
+<wire x1="-53.34" y1="33.02" x2="-58.42" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND2" class="0">
+<segment>
+<pinref part="JP4" gate="A" pin="22"/>
+<wire x1="-53.34" y1="20.32" x2="-58.42" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND3" class="0">
+<segment>
+<pinref part="JP4" gate="A" pin="12"/>
+<wire x1="-53.34" y1="7.62" x2="-58.42" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND4" class="0">
+<segment>
+<pinref part="JP4" gate="A" pin="11"/>
+<wire x1="-45.72" y1="7.62" x2="-40.64" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND5" class="0">
+<segment>
+<pinref part="JP4" gate="A" pin="21"/>
+<wire x1="-45.72" y1="20.32" x2="-40.64" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND6" class="0">
+<segment>
+<pinref part="JP4" gate="A" pin="31"/>
+<wire x1="-45.72" y1="33.02" x2="-40.64" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND7" class="0">
+<segment>
+<wire x1="-45.72" y1="43.18" x2="-40.64" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GPIO0" class="0">
+<segment>
+<pinref part="JP3" gate="A" pin="28"/>
+<wire x1="-76.2" y1="91.44" x2="-73.66" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="93.98" x2="-53.34" y2="93.98" width="0.1524" layer="91"/>
+<label x="-68.58" y="93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GPIO1" class="0">
+<segment>
+<pinref part="JP3" gate="A" pin="27"/>
+<wire x1="-20.32" y1="91.44" x2="-22.86" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="93.98" x2="-45.72" y2="93.98" width="0.1524" layer="91"/>
+<label x="-35.56" y="93.98" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="OEN" class="0">
+<segment>
+<pinref part="JP3" gate="A" pin="26"/>
+<wire x1="-76.2" y1="88.9" x2="-73.66" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="91.44" x2="-53.34" y2="91.44" width="0.1524" layer="91"/>
+<label x="-68.58" y="91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RDN" class="0">
+<segment>
+<pinref part="JP3" gate="A" pin="25"/>
+<wire x1="-20.32" y1="88.9" x2="-22.86" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="91.44" x2="-45.72" y2="91.44" width="0.1524" layer="91"/>
+<label x="-35.56" y="91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="WRN" class="0">
+<segment>
+<pinref part="JP3" gate="A" pin="24"/>
+<wire x1="-76.2" y1="86.36" x2="-73.66" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="88.9" x2="-53.34" y2="88.9" width="0.1524" layer="91"/>
+<label x="-68.58" y="88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SIWUN" class="0">
+<segment>
+<pinref part="JP3" gate="A" pin="23"/>
+<wire x1="-20.32" y1="86.36" x2="-22.86" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="88.9" x2="-45.72" y2="88.9" width="0.1524" layer="91"/>
+<label x="-35.56" y="88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TXEN" class="0">
+<segment>
+<pinref part="JP3" gate="A" pin="22"/>
+<wire x1="-76.2" y1="83.82" x2="-73.66" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="86.36" x2="-53.34" y2="86.36" width="0.1524" layer="91"/>
+<label x="-68.58" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RXFN" class="0">
+<segment>
+<pinref part="JP3" gate="A" pin="21"/>
+<wire x1="-20.32" y1="83.82" x2="-22.86" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="86.36" x2="-45.72" y2="86.36" width="0.1524" layer="91"/>
+<label x="-35.56" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BE0" class="0">
+<segment>
+<pinref part="JP4" gate="A" pin="24"/>
+<wire x1="-76.2" y1="20.32" x2="-73.66" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="22.86" x2="-53.34" y2="22.86" width="0.1524" layer="91"/>
+<label x="-68.58" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BE2" class="0">
+<segment>
+<pinref part="JP4" gate="A" pin="26"/>
+<wire x1="-76.2" y1="22.86" x2="-73.66" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="25.4" x2="-53.34" y2="25.4" width="0.1524" layer="91"/>
+<label x="-68.58" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BE1" class="0">
+<segment>
+<pinref part="JP4" gate="A" pin="23"/>
+<wire x1="-20.32" y1="20.32" x2="-22.86" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="22.86" x2="-45.72" y2="22.86" width="0.1524" layer="91"/>
+<label x="-33.02" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BE3" class="0">
+<segment>
+<pinref part="JP4" gate="A" pin="25"/>
+<wire x1="-20.32" y1="22.86" x2="-22.86" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="25.4" x2="-45.72" y2="25.4" width="0.1524" layer="91"/>
+<label x="-33.02" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
