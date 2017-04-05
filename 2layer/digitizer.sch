@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.1">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12386,6 +12386,43 @@ FOR RESET AND WAKEUP SIG</text>
 <wire x1="-83.82" y1="30.48" x2="-93.98" y2="30.48" width="0.1524" layer="91"/>
 <label x="-88.9" y="30.48" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JP4" gate="A" pin="12"/>
+<wire x1="-53.34" y1="7.62" x2="-58.42" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="A" pin="11"/>
+<wire x1="-45.72" y1="7.62" x2="-40.64" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="A" pin="21"/>
+<wire x1="-45.72" y1="20.32" x2="-40.64" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="A" pin="22"/>
+<wire x1="-53.34" y1="20.32" x2="-58.42" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="A" pin="31"/>
+<wire x1="-45.72" y1="33.02" x2="-40.64" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="A" pin="32"/>
+<wire x1="-53.34" y1="33.02" x2="-58.42" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="-45.72" y1="43.18" x2="-40.64" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="A" pin="22"/>
+<wire x1="-66.04" y1="86.36" x2="-53.34" y2="86.36" width="0.1524" layer="91"/>
+<label x="-63.5" y="86.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="A" pin="21"/>
+<wire x1="-30.48" y1="86.36" x2="-45.72" y2="86.36" width="0.1524" layer="91"/>
+<label x="-38.1" y="86.36" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="AVDD" class="0">
 <segment>
@@ -12981,47 +13018,6 @@ FOR RESET AND WAKEUP SIG</text>
 <label x="-114.3" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GND1" class="0">
-<segment>
-<pinref part="JP4" gate="A" pin="32"/>
-<wire x1="-53.34" y1="33.02" x2="-58.42" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GND2" class="0">
-<segment>
-<pinref part="JP4" gate="A" pin="22"/>
-<wire x1="-53.34" y1="20.32" x2="-58.42" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GND3" class="0">
-<segment>
-<pinref part="JP4" gate="A" pin="12"/>
-<wire x1="-53.34" y1="7.62" x2="-58.42" y2="7.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GND4" class="0">
-<segment>
-<pinref part="JP4" gate="A" pin="11"/>
-<wire x1="-45.72" y1="7.62" x2="-40.64" y2="7.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GND5" class="0">
-<segment>
-<pinref part="JP4" gate="A" pin="21"/>
-<wire x1="-45.72" y1="20.32" x2="-40.64" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GND6" class="0">
-<segment>
-<pinref part="JP4" gate="A" pin="31"/>
-<wire x1="-45.72" y1="33.02" x2="-40.64" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="GND7" class="0">
-<segment>
-<wire x1="-45.72" y1="43.18" x2="-40.64" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="GPIO0" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="28"/>
@@ -13068,22 +13064,6 @@ FOR RESET AND WAKEUP SIG</text>
 <wire x1="-20.32" y1="86.36" x2="-22.86" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="88.9" x2="-45.72" y2="88.9" width="0.1524" layer="91"/>
 <label x="-35.56" y="88.9" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="TXEN" class="0">
-<segment>
-<pinref part="JP3" gate="A" pin="22"/>
-<wire x1="-76.2" y1="83.82" x2="-73.66" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="-73.66" y1="86.36" x2="-53.34" y2="86.36" width="0.1524" layer="91"/>
-<label x="-68.58" y="86.36" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RXFN" class="0">
-<segment>
-<pinref part="JP3" gate="A" pin="21"/>
-<wire x1="-20.32" y1="83.82" x2="-22.86" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="86.36" x2="-45.72" y2="86.36" width="0.1524" layer="91"/>
-<label x="-35.56" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BE0" class="0">

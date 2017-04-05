@@ -3261,7 +3261,9 @@ design rules under a new name.</description>
 <element name="U$7" library="components" package="UKY1C-H1-16357-0045" value="CX3225SB_UKY1C-H1-16357-0045" x="34.29" y="44.958" rot="MR270"/>
 <element name="C16" library="resistor" package="C0402" value="18p" x="35.56" y="42.164" rot="MR0"/>
 <element name="C17" library="resistor" package="C0402" value="18p" x="32.512" y="42.164" rot="MR180"/>
-<element name="R10" library="resistor" package="R0402" value="10k &lt;=0.1%" x="28.448" y="34.544" rot="R270"/>
+<element name="R10" library="resistor" package="R0402" value="10k &lt;=0.1%" x="37.8968" y="37.2872" smashed="yes" rot="MR45">
+<attribute name="NAME" x="38.794825" y="37.2872" size="1.016" layer="26" rot="MR45"/>
+</element>
 <element name="C18" library="resistor" package="C0402" value="0.1u" x="29.464" y="44.196" smashed="yes" rot="R90">
 <attribute name="NAME" x="28.829" y="43.053" size="1.016" layer="25" rot="R90"/>
 </element>
@@ -3269,13 +3271,17 @@ design rules under a new name.</description>
 <attribute name="NAME" x="31.0642" y="45.339" size="1.016" layer="25" rot="R270"/>
 </element>
 <element name="C20" library="resistor" package="C0402" value="1u" x="36.90439375" y="36.291184375" rot="MR225"/>
-<element name="C21" library="resistor" package="C0402" value="0.1u" x="37.67541875" y="37.062209375" rot="MR225"/>
+<element name="C21" library="resistor" package="C0402" value="0.1u" x="35.94821875" y="35.360409375" rot="MR225"/>
 <element name="C22" library="resistor" package="C0402" value="4.7u" x="40.9067625" y="34.5748125" rot="MR315"/>
-<element name="S1" library="SparkFun-Switches" package="TACTILE_SWITCH_SMD_6.0X3.5MM" value="MOMENTARY-SWITCH-SPST-SMD-6.0X3.5MM" x="23.368" y="46.482" rot="R270">
+<element name="S1" library="SparkFun-Switches" package="TACTILE_SWITCH_SMD_6.0X3.5MM" value="MOMENTARY-SWITCH-SPST-SMD-6.0X3.5MM" x="23.368" y="46.482" smashed="yes" rot="R270">
 <attribute name="SF_SKU" value="COM-08229" x="23.368" y="46.482" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PROD_ID" value="SWCH-00815" x="23.368" y="46.482" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="25.527" y="46.482" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 </element>
-<element name="R13" library="resistor" package="R0402" value="" x="23.622" y="39.878" rot="R90"/>
+<element name="R13" library="resistor" package="R0402" value="" x="23.622" y="40.132" smashed="yes" rot="R90">
+<attribute name="NAME" x="23.241" y="38.481" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="25.527" y="39.497" size="1.27" layer="27" rot="R90"/>
+</element>
 <element name="X2" library="con-coax" package="J502-ND-142-0711-881/886" value="SMA-142-0711-881/886" x="37.084" y="0.254" smashed="yes" rot="R90">
 <attribute name="MPN" value="142-0711-881" x="37.084" y="0.254" size="0.6096" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="50B4464" x="37.084" y="0.254" size="0.6096" layer="27" rot="R90" display="off"/>
@@ -3283,13 +3289,23 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="37.084" y="0.254" size="0.6096" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="30.734" y="0.889" size="1.778" layer="25" rot="R90"/>
 </element>
-<element name="R16" library="resistor" package="R0402" value="" x="22.098" y="39.878" rot="R270"/>
-<element name="S2" library="SparkFun-Switches" package="TACTILE_SWITCH_SMD_6.0X3.5MM" value="MOMENTARY-SWITCH-SPST-SMD-6.0X3.5MM" x="19.05" y="46.482" rot="R270">
+<element name="R16" library="resistor" package="R0402" value="" x="21.844" y="40.132" smashed="yes" rot="R90">
+<attribute name="NAME" x="21.463" y="38.481" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="23.749" y="39.497" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="S2" library="SparkFun-Switches" package="TACTILE_SWITCH_SMD_6.0X3.5MM" value="MOMENTARY-SWITCH-SPST-SMD-6.0X3.5MM" x="19.05" y="46.482" smashed="yes" rot="R270">
 <attribute name="SF_SKU" value="COM-08229" x="19.05" y="49.276" size="0.6096" layer="27" rot="R270" display="off"/>
 <attribute name="PROD_ID" value="SWCH-00815" x="19.05" y="49.276" size="0.6096" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="16.383" y="46.482" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
 </element>
-<element name="R12" library="resistor" package="R0402" value="" x="18.796" y="40.132" rot="R90"/>
-<element name="R17" library="resistor" package="R0402" value="" x="20.066" y="40.132" rot="R270"/>
+<element name="R12" library="resistor" package="R0402" value="" x="18.796" y="40.132" smashed="yes" rot="R90">
+<attribute name="NAME" x="18.161" y="38.481" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="20.701" y="39.497" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R17" library="resistor" package="R0402" value="" x="17.272" y="40.132" smashed="yes" rot="R90">
+<attribute name="NAME" x="16.637" y="38.481" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="19.177" y="39.497" size="1.27" layer="27" rot="R90"/>
+</element>
 </elements>
 <signals>
 <signal name="SAMP0">
@@ -3435,12 +3451,12 @@ design rules under a new name.</description>
 <wire x1="27.238" y1="2.413" x2="27.238" y2="3.683" width="0" layer="19" extent="1-1"/>
 <wire x1="22.038" y1="2.413" x2="27.238" y2="2.413" width="0" layer="19" extent="1-1"/>
 <wire x1="19.812" y1="2.906" x2="22.038" y2="2.413" width="0" layer="19" extent="1-1"/>
-<wire x1="28.448" y1="35.194" x2="25.766" y2="16.002" width="0" layer="19" extent="1-1"/>
-<wire x1="32.9369875" y1="35.49095" x2="28.448" y2="35.194" width="0" layer="19" extent="1-1"/>
+<wire x1="38.356421875" y1="36.827578125" x2="25.766" y2="16.002" width="0" layer="19" extent="1-1"/>
+<wire x1="32.9369875" y1="35.49095" x2="38.356421875" y2="36.827578125" width="0" layer="19" extent="1-1"/>
 <wire x1="34.9168875" y1="37.470846875" x2="32.9369875" y2="35.49095" width="0" layer="19" extent="1-1"/>
 <wire x1="35.765415625" y1="38.319375" x2="34.9168875" y2="37.470846875" width="0" layer="19" extent="1-1"/>
-<wire x1="38.135040625" y1="36.6025875" x2="35.765415625" y2="38.319375" width="0" layer="19" extent="1-16"/>
-<wire x1="37.364015625" y1="35.8315625" x2="38.135040625" y2="36.6025875" width="0" layer="19" extent="16-16"/>
+<wire x1="36.407840625" y1="34.9007875" x2="35.765415625" y2="38.319375" width="0" layer="19" extent="1-16"/>
+<wire x1="37.364015625" y1="35.8315625" x2="36.407840625" y2="34.9007875" width="0" layer="19" extent="16-16"/>
 <wire x1="38.1" y1="34.29" x2="37.364015625" y2="35.8315625" width="0" layer="19" extent="1-16"/>
 <wire x1="40.44714375" y1="34.115190625" x2="38.1" y2="34.29" width="0" layer="19" extent="1-16"/>
 <wire x1="41.34516875" y1="33.217165625" x2="40.44714375" y2="34.115190625" width="0" layer="19" extent="16-16"/>
@@ -3476,8 +3492,8 @@ design rules under a new name.</description>
 <wire x1="28.56" y1="6.604" x2="30.242" y2="14.246" width="0" layer="19" extent="1-1"/>
 <wire x1="27.238" y1="4.953" x2="28.56" y2="6.604" width="0" layer="19" extent="1-1"/>
 <wire x1="27.238" y1="1.143" x2="27.238" y2="4.953" width="0" layer="19" extent="1-1"/>
-<wire x1="23.622" y1="39.228" x2="25.416" y2="14.246" width="0" layer="19" extent="1-1"/>
-<wire x1="18.796" y1="39.482" x2="23.622" y2="39.228" width="0" layer="19" extent="1-1"/>
+<wire x1="23.622" y1="39.482" x2="25.416" y2="14.246" width="0" layer="19" extent="1-1"/>
+<wire x1="18.796" y1="39.482" x2="23.622" y2="39.482" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AIN+">
 <contactref element="Z1" pad="1"/>
@@ -3559,7 +3575,7 @@ design rules under a new name.</description>
 <wire x1="32.371303125" y1="34.9252625" x2="35.199728125" y2="30.82630625" width="0" layer="19" extent="16-16"/>
 <wire x1="35.199728125" y1="37.753690625" x2="32.371303125" y2="34.9252625" width="0" layer="19" extent="16-16"/>
 <wire x1="36.444775" y1="36.750803125" x2="35.199728125" y2="37.753690625" width="0" layer="19" extent="1-16"/>
-<wire x1="37.2158" y1="37.521828125" x2="36.444775" y2="36.750803125" width="0" layer="19" extent="1-1"/>
+<wire x1="35.4886" y1="35.820028125" x2="36.444775" y2="36.750803125" width="0" layer="19" extent="1-1"/>
 <wire x1="36.3311" y1="38.8850625" x2="35.199728125" y2="37.753690625" width="0" layer="19" extent="16-16"/>
 <wire x1="37.462471875" y1="40.01643125" x2="36.3311" y2="38.8850625" width="0" layer="19" extent="16-16"/>
 <wire x1="40.149478125" y1="38.60448125" x2="37.462471875" y2="40.01643125" width="0" layer="19" extent="16-16"/>
@@ -3780,8 +3796,8 @@ design rules under a new name.</description>
 <contactref element="S2" pad="2"/>
 <contactref element="R12" pad="2"/>
 <contactref element="R17" pad="1"/>
-<wire x1="20.066" y1="40.782" x2="39.866634375" y2="38.887325" width="0" layer="19" extent="1-16"/>
-<wire x1="18.796" y1="40.782" x2="20.066" y2="40.782" width="0" layer="19" extent="1-1"/>
+<wire x1="17.272" y1="39.482" x2="39.866634375" y2="38.887325" width="0" layer="19" extent="1-16"/>
+<wire x1="18.796" y1="40.782" x2="17.272" y2="39.482" width="0" layer="19" extent="1-1"/>
 <wire x1="19.05" y1="43.332" x2="18.796" y2="40.782" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="WKPN">
@@ -3789,9 +3805,9 @@ design rules under a new name.</description>
 <contactref element="S1" pad="2"/>
 <contactref element="R13" pad="2"/>
 <contactref element="R16" pad="1"/>
-<wire x1="23.622" y1="40.528" x2="39.583790625" y2="39.170165625" width="0" layer="19" extent="1-16"/>
-<wire x1="22.098" y1="40.528" x2="23.622" y2="40.528" width="0" layer="19" extent="1-1"/>
-<wire x1="23.368" y1="43.332" x2="23.622" y2="40.528" width="0" layer="19" extent="1-1"/>
+<wire x1="23.622" y1="40.782" x2="39.583790625" y2="39.170165625" width="0" layer="19" extent="1-16"/>
+<wire x1="21.844" y1="39.482" x2="23.622" y2="40.782" width="0" layer="19" extent="1-1"/>
+<wire x1="23.368" y1="43.332" x2="23.622" y2="40.782" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO0">
 <contactref element="IC1" pad="17"/>
@@ -3844,7 +3860,7 @@ design rules under a new name.</description>
 <signal name="N$13">
 <contactref element="IC1" pad="27"/>
 <contactref element="R10" pad="2"/>
-<wire x1="28.448" y1="33.894" x2="35.482571875" y2="38.036534375" width="0" layer="19" extent="1-1"/>
+<wire x1="37.43718125" y1="37.74681875" x2="35.482571875" y2="38.036534375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$14">
 <contactref element="U$6" pad="P$10"/>
