@@ -12094,7 +12094,7 @@ FOR RESET AND WAKEUP SIG</text>
 <instance part="JP3" gate="A" x="-48.26" y="83.82" rot="R180"/>
 <instance part="JP4" gate="A" x="-48.26" y="17.78" rot="R180"/>
 <instance part="SUPPLY8" gate="GND" x="-60.96" y="33.02" rot="R270"/>
-<instance part="SUPPLY9" gate="GND" x="-60.96" y="20.32" rot="R270"/>
+<instance part="SUPPLY9" gate="GND" x="-71.12" y="20.32" rot="R270"/>
 <instance part="SUPPLY10" gate="GND" x="-60.96" y="7.62" rot="R270"/>
 <instance part="SUPPLY28" gate="GND" x="-38.1" y="7.62" rot="R90"/>
 <instance part="SUPPLY29" gate="GND" x="-38.1" y="20.32" rot="R90"/>
@@ -12132,7 +12132,7 @@ FOR RESET AND WAKEUP SIG</text>
 <wire x1="-119.38" y1="-20.32" x2="-76.2" y2="-20.32" width="0.762" layer="92"/>
 <wire x1="-76.2" y1="-20.32" x2="-76.2" y2="45.72" width="0.762" layer="92"/>
 <wire x1="-119.38" y1="-20.32" x2="-119.38" y2="53.34" width="0.762" layer="92"/>
-<wire x1="-119.38" y1="83.82" x2="-119.38" y2="53.34" width="0.762" layer="92"/>
+<wire x1="-119.38" y1="86.36" x2="-119.38" y2="53.34" width="0.762" layer="92"/>
 <wire x1="-119.38" y1="53.34" x2="-76.2" y2="53.34" width="0.762" layer="92"/>
 <wire x1="-76.2" y1="53.34" x2="-76.2" y2="111.76" width="0.762" layer="92"/>
 <wire x1="-76.2" y1="53.34" x2="-20.32" y2="53.34" width="0.762" layer="92"/>
@@ -12448,7 +12448,8 @@ FOR RESET AND WAKEUP SIG</text>
 </segment>
 <segment>
 <pinref part="JP4" gate="A" pin="22"/>
-<wire x1="-53.34" y1="20.32" x2="-58.42" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="20.32" x2="-68.58" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="SUPPLY9" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="A" pin="31"/>
@@ -12837,9 +12838,9 @@ FOR RESET AND WAKEUP SIG</text>
 <label x="-103.378" y="-32.766" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="40"/>
-<wire x1="-63.5" y1="109.22" x2="-53.34" y2="109.22" width="0.1524" layer="91"/>
-<label x="-71.12" y="109.22" size="1.778" layer="95"/>
+<pinref part="JP4" gate="A" pin="20"/>
+<wire x1="-58.42" y1="17.78" x2="-53.34" y2="17.78" width="0.1524" layer="91"/>
+<label x="-58.42" y="17.78" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="RSTN" class="0">
@@ -12863,9 +12864,9 @@ FOR RESET AND WAKEUP SIG</text>
 <label x="-80.518" y="-32.258" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="38"/>
-<wire x1="-63.5" y1="106.68" x2="-53.34" y2="106.68" width="0.1524" layer="91"/>
-<label x="-71.12" y="106.68" size="1.778" layer="95"/>
+<pinref part="JP4" gate="A" pin="26"/>
+<wire x1="-58.42" y1="25.4" x2="-53.34" y2="25.4" width="0.1524" layer="91"/>
+<label x="-58.42" y="25.4" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -13029,12 +13030,6 @@ FOR RESET AND WAKEUP SIG</text>
 </net>
 <net name="UDAT19" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="24"/>
-<wire x1="-76.2" y1="78.74" x2="-78.74" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="81.28" x2="-93.98" y2="81.28" width="0.1524" layer="91"/>
-<label x="-88.9" y="81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP2" gate="A" pin="24"/>
 <wire x1="-76.2" y1="12.7" x2="-78.74" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-78.74" y1="15.24" x2="-93.98" y2="15.24" width="0.1524" layer="91"/>
@@ -13096,14 +13091,6 @@ FOR RESET AND WAKEUP SIG</text>
 <label x="-114.3" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="UDAT22" class="0">
-<segment>
-<pinref part="JP1" gate="A" pin="19"/>
-<wire x1="-119.38" y1="83.82" x2="-116.84" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="-116.84" y1="86.36" x2="-101.6" y2="86.36" width="0.1524" layer="91"/>
-<label x="-114.3" y="86.36" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="UDAT20" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="23"/>
@@ -13114,10 +13101,10 @@ FOR RESET AND WAKEUP SIG</text>
 </net>
 <net name="UDAT23" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="20"/>
-<wire x1="-76.2" y1="83.82" x2="-78.74" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="-78.74" y1="86.36" x2="-93.98" y2="86.36" width="0.1524" layer="91"/>
-<label x="-88.9" y="86.36" size="1.778" layer="95"/>
+<pinref part="JP1" gate="A" pin="17"/>
+<wire x1="-119.38" y1="86.36" x2="-116.84" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="88.9" x2="-101.6" y2="88.9" width="0.1524" layer="91"/>
+<label x="-114.3" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UDAT25" class="0">
@@ -13353,6 +13340,22 @@ FOR RESET AND WAKEUP SIG</text>
 <wire x1="-76.2" y1="10.16" x2="-78.74" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="-78.74" y1="12.7" x2="-93.98" y2="12.7" width="0.1524" layer="91"/>
 <label x="-88.9" y="12.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT22" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="19"/>
+<wire x1="-119.38" y1="83.82" x2="-116.84" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="86.36" x2="-101.6" y2="86.36" width="0.1524" layer="91"/>
+<label x="-114.3" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UDAT21" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="20"/>
+<wire x1="-76.2" y1="83.82" x2="-78.74" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="86.36" x2="-93.98" y2="86.36" width="0.1524" layer="91"/>
+<label x="-88.9" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
